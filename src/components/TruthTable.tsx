@@ -10,11 +10,11 @@ export default function TruthTable({ table }: TruthTableProps) {
   if (!table || table.type !== "ValidTable") return null
   
   return (
-    <table className="table-auto w-full text-center border-collapse">
+    <table className="">
       <thead>
         <tr>
           {table.header.map((col, idx) => (
-            <th key={idx} className="border px-2 py-1">{col}</th>
+            <th key={idx} className="">{col}</th>
           ))}
         </tr>
       </thead>
@@ -22,7 +22,7 @@ export default function TruthTable({ table }: TruthTableProps) {
         {table.rows.map((row, rIdx) => (
           <tr key={rIdx}>
             {row.map((cell, cIdx) => (
-              <td key={cIdx} className="border px-2 py-1">{+cell}</td>
+              <td key={cIdx} className="">{+cell}</td>
             ))}
           </tr>
         ))}

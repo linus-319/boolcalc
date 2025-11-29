@@ -40,29 +40,23 @@ export default function ExprInput() {
   }
 
   return (
-    <div className="flex justify-center items-center">
-      <form
-        className="flex flex-col items-center gap-2 w-full max-w-xs"
-        onSubmit={handleSubmit}
-      >
+    <div className="form-container" >
+      <form onSubmit={handleSubmit}>
         <input
-          className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 shadow-sm w-full text-center"
+          className=""
           type="text"
           placeholder="Enter boolean expression"
           value={input}
           onChange={e => setInput(e.target.value)}
         />
-        <button
-          type="submit"
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow"
-        >
+        <button type="submit">
           Generate Truth Table
         </button>
       </form>
       {result && (
-        <div className="mt-4 w-full max-w-xs bg-gray-900 rounded p-2 text-sm">
+        <div className="">
           {result.type === "Invalid"
-            ? <span className="text-red-600">{result.msg}</span>
+            ? <span className="">{result.msg}</span>
             : <TruthTable table={result.type === "ValidTable" ? result : null} />
           }
         </div>
