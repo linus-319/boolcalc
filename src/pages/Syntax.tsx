@@ -1,11 +1,9 @@
 import SyntaxRules from "../components/SyntaxRules"
-import ValidExprExamples from "../components/ValidExprExamples"
 
 export default function Syntax() {
   return (
-    <div>
+    <div className="parent-div">
       <SyntaxRules />
-      <ValidExprExamples />
     </div>
   )
 }

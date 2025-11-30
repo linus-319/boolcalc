@@ -2,17 +2,17 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Syntax from './pages/Syntax'
-import About from './pages/About'
+import Examples from './pages/Examples'
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <div className="app-container">       
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/valid-expression-examples" element={<Examples />} />
           <Route path="/syntax" element={<Syntax />} />
-          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>

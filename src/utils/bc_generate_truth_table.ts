@@ -1,4 +1,4 @@
-import { parser } from './bc_parser'; // adjust import path as needed
+import { parser } from './bc_parser';
 import type { Result } from './bc_syntax';
 import { evalProgram } from './bc_evaluator';
 

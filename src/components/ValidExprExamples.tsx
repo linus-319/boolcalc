@@ -1,7 +1,7 @@
 export default function ValidExprExamples() {
   return (
-    <div className="">
-      <table className="">
+    <div className="table-container ">
+      <table className="syntax-table">
         <thead>
           <tr className="">
             <th className="">Expression</th>

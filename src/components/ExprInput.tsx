@@ -43,16 +43,17 @@ export default function ExprInput() {
     <div className="form-container" >
       <form onSubmit={handleSubmit}>
         <input
-          className=""
+          className="form-input"
           type="text"
           placeholder="Enter boolean expression"
           value={input}
           onChange={e => setInput(e.target.value)}
         />
-        <button type="submit">
+        <button type="submit" className="form-button">
           Generate Truth Table
         </button>
       </form>
+      
       {result && (
         <div className="">
           {result.type === "Invalid"

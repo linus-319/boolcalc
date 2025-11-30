@@ -11,13 +11,13 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/about" className='nav-link'>
-            About
-          </Link>
-        </li>
-        <li >
           <Link to='/syntax' className='nav-link'>
             Syntax Rules
+          </Link>
+        </li>
+        <li>
+          <Link to='/valid-expression-examples' className='nav-link'>
+            Valid Expression Examples
           </Link>
         </li>
       </ul>
