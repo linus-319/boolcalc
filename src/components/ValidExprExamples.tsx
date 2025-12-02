@@ -1,6 +1,6 @@
 export default function ValidExprExamples() {
   return (
-    <div className="table-container ">
+    <div className="about-container">
       <table className="syntax-table">
         <thead>
           <tr className="">

@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { generateTruthTable } from "../utils/bc_generate_truth_table"
-import TruthTable from "./TruthTable"
 import { type Result } from "../utils/bc_syntax"
 
 function isalpha(char: string) {
@@ -28,15 +27,18 @@ function addMulOperators(input: string) {
   return result
 }
 
-export default function ExprInput() {
+type ExprInputProps = {
+  onResultChange: (result: Result | null) => void
+}
+
+export default function ExprInput({ onResultChange }: ExprInputProps) {
   const [input, setInput] = useState("")
-  const [result, setResult] = useState<Result | null>(null)
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const processedInput = addMulOperators(input.replace(/\s/g, ''))
     const res = generateTruthTable(processedInput)
-    setResult(res)
+    onResultChange(res)
   }
 
   return (
@@ -53,15 +55,6 @@ export default function ExprInput() {
           Generate Truth Table
         </button>
       </form>
-      
-      {result && (
-        <div className="">
-          {result.type === "Invalid"
-            ? <span className="">{result.msg}</span>
-            : <TruthTable table={result.type === "ValidTable" ? result : null} />
-          }
-        </div>
-      )}
     </div>
   )
 }
