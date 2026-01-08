@@ -10,14 +10,12 @@ function App() {
     <div className='app-background'>
       <Router>
         <Navbar />
-        <div>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/valid-expression-examples" element={<Examples />} />
-            <Route path="/syntax" element={<Syntax />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/valid-expression-examples" element={<Examples />} />
+          <Route path="/syntax" element={<Syntax />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </Router>
     </div>
   )

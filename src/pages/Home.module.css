@@ -1,0 +1,54 @@
+.home-container {
+    margin-top: 0px;
+    width: 80%;
+    max-width: 600px;
+}
+
+
+.truth-table {
+  overflow-x: auto;
+  color: rgb(68, 124, 154);
+}
+
+.truth-table table {
+  width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.truth-table th {
+  background-color: #f4f4f6;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 2px solid #ddd;
+  white-space: nowrap;
+}
+
+.truth-table td {
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.truth-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.truth-table td:last-child,
+.truth-table th:last-child {
+  font-weight: 700;
+  background-color: #eef8ff;
+}
+
+.truth-table td {
+  font-family: "Menlo", "Consolas", monospace;
+}
+
+.truth-table tbody tr:hover {
+  background-color: #eaf4ff;
+}

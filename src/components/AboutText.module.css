@@ -1,0 +1,22 @@
+.about-container {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 12px;
+    height: 100vh;
+}
+
+.about-header {
+    margin: 8px auto 8px auto;
+    padding: 8px 8px;
+    border: 2px solid #3a7bfd;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.about-list {
+    margin-bottom: 8px;
+    padding: 8px 8px;
+    border: 2px solid #3a7bfd;
+    border-radius: 12px;
+    list-style: none;
+}

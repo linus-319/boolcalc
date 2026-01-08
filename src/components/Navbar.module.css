@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    background: #0f0f0f;
+    border-bottom: 1px solid #ddd;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #a0a7be;
+  margin: 20px;
+}
+
+.navlist {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: start;
+  color: #1c49da;
+  margin: 20px;
+
+}

@@ -7,14 +7,14 @@ export type TruthTableProps = {
 }
 
 export default function TruthTable({ table }: TruthTableProps) {
-  if (!table || table.type !== "ValidTable") return null
+  if (!table || table.type !== "ValidTable") return null;
   
   return (
-    <table className="">
+    <table>
       <thead>
         <tr>
           {table.header.map((col, idx) => (
-            <th key={idx} className="">{col}</th>
+            <th key={idx}>{col}</th>
           ))}
         </tr>
       </thead>
@@ -22,7 +22,7 @@ export default function TruthTable({ table }: TruthTableProps) {
         {table.rows.map((row, rIdx) => (
           <tr key={rIdx}>
             {row.map((cell, cIdx) => (
-              <td key={cIdx} className="">{+cell}</td>
+              <td key={cIdx}>{+cell}</td>
             ))}
           </tr>
         ))}
