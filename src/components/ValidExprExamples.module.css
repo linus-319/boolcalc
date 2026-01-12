@@ -8,8 +8,9 @@
 .examples-header {
     margin-bottom: 8px;
     padding: 8px 8px;
-    border: 2px solid #3a7bfd;
     border-radius: 12px;
+    background-color: #161923;
+    box-shadow: 5px 5px 10px rgb(137, 136, 136);
 }
 
 .examples-table-container {
@@ -21,13 +22,14 @@
 .examples-table {
     border: solid 1px;
     border-color: #60abb5;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     font-family: ui-sans-serif, system-ui, sans-serif;
     text-align: left;
     font-size: 1.1rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(137, 136, 136);
 }
 
 .examples-table th {
@@ -49,4 +51,8 @@
 
 .examples-table tbody tr:nth-child(even) {
     background-color: #2c2949;
+}
+
+.examples-table tbody tr:nth-child(odd) {
+    background-color: #161923;
 }

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { generateTruthTable } from "../utils/bc_generate_truth_table"
 import { type Result } from "../utils/bc_syntax"
+import styles from "./ExprInput.module.css"
 
 function isalpha(char: string) {
   return char.toLowerCase() !== char.toUpperCase()
@@ -42,16 +43,16 @@ export default function ExprInput({ onResultChange }: ExprInputProps) {
   }
 
   return (
-    <div className="form-container" >
+    <div className={styles["form-container"]} >
       <form onSubmit={handleSubmit}>
         <input
-          className="form-input"
+          className={styles["form-input"]}
           type="text"
           placeholder="Enter boolean expression"
           value={input}
           onChange={e => setInput(e.target.value)}
         />
-        <button type="submit" className="form-button">
+        <button type="submit" className={styles["form-button"]}>
           Generate Truth Table
         </button>
       </form>
