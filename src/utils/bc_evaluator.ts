@@ -27,8 +27,8 @@ function getVars(expr: E): string[] {
     case 'BoolB': vars.add(e.value.name); break;
     // Optionally, add a default: to catch errors
     default: throw new Error(`Unknown node type: ${(e as any).type}`);
+    }
   }
-}
 
   collect(expr);
   return Array.from(vars);
