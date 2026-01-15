@@ -35,6 +35,10 @@ export default function ValidExprExamples() {
               <td>(ABC)+(!BCD)</td>
               <td>(A AND B AND C) OR ((NOT B) AND C AND D)</td>
             </tr>
+            <tr>
+              <td>(A+B+C)(!B+C+D)</td>
+              <td>(A OR B OR C) AND ((NOT B) OR C OR D)</td>
+            </tr>
           </tbody>
         </table>
       </div>
