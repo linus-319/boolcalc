@@ -10,20 +10,18 @@ export default function Home() {
 
   return (
     <div className="parent-div">
-      <div className={styles["home-container"]}>
+      <div className='page-container'>
         <div>
           <ExprInput onResultChange={setResult} />
         </div>
-        <div className={styles["truth-table"]}>
-          {result && (
-            <div>
-              {result.type === "Invalid"
-                ? <span>{result.msg}</span>
-                : <TruthTable table={result.type === "ValidTable" ? result : null} />
-              }
-            </div>
-          )}
-        </div>
+        {result && <div className={styles["truth-table"]}>
+          <div>
+            {result.type === "Invalid"
+              ? <span>{result.msg}</span>
+              : <TruthTable table={result.type === "ValidTable" ? result : null} />
+            }
+          </div>
+        </div>}
       </div>
     </div>
   )

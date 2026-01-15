@@ -66,8 +66,66 @@ h1 {
   line-height: 1.1;
 }
 
-@media (max-width: 600px) {
+.page-container {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 12px;
+}
 
+.page-header {
+    margin: 8px auto 8px auto;
+    padding: 8px 8px;
+    border-radius: 12px;
+    width: fit-content;
+    background-color: #161923;
+    box-shadow: 5px 5px 10px rgb(137, 136, 136);
+}
+
+.page-table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-table {
+    border: solid 1px;
+    border-color: #60abb5;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgb(137, 136, 136);
+}
+
+.page-table th {
+    background-color: #242424;
+    color: white;
+    padding: 14px;
+    font-weight: 600;
+}
+
+.page-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #60abb5;
+}
+
+.page-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+}
+
+.page-table tbody tr:nth-child(even) {
+    background-color: #2c2949;
+}
+
+.page-table tbody tr:nth-child(odd) {
+    background-color: #161923;
+}
+
+@media (max-width: 600px) {
   .truth-table th,
   .truth-table td {
     padding: 0.4rem 0.5rem;

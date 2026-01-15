@@ -2,8 +2,8 @@ import styles from './AboutText.module.css';
 
 export default function AboutText() {
     return (
-        <div className={styles['about-container']}>
-            <h1 className={styles['about-header']}>About</h1>
+        <div className='page-container'>
+            <h1 className='page-header'>About</h1>
             <ul className={styles['about-list']}>
                 <li>
                     <p>I developed a need for this tool when taking a digital systems course during my undergrad degree. In the course, designing logical circuit boards required creating complex truth tables, and throughout the course I tried many online truth table generators that were helpful for checking my work, however the syntax was always far too verbose for my liking.</p>

@@ -2,10 +2,10 @@ import styles from './SyntaxRules.module.css';
 
 export default function SyntaxRules() {
   return (
-    <div className={styles['syntax-container']}>
-      <h1 className={`${styles['syntax-header']}`}>Boolean Algebra Syntax</h1>
-      <div className={styles["syntax-table-container"]}>
-        <table className={styles["syntax-table"]}>
+    <div className='page-container'>
+      <h1 className='page-header'>Boolean Algebra Syntax</h1>
+      <div className='page-table-container'>
+        <table className='page-table'>
           <thead>
             <tr>
               <th>Order of Operations</th>

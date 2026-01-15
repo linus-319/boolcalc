@@ -1,37 +1,39 @@
-import styles from './ValidExprExamples.module.css';
-
 export default function ValidExprExamples() {
   return (
-    <div className={styles['examples-container']}>
-      <h1 className={styles['examples-header']}>Examples of Valid Syntax</h1>
-      <div className={styles["examples-table-container"]}>
-        <table className={styles["examples-table"]}>
+    <div className='page-container'>
+      <h1 className='page-header'>Examples of Valid Syntax</h1>
+      <div className='page-table-container'>
+        <table className='page-table'>
           <thead>
-            <tr className="">
-              <th className="">Expression</th>
-              <th className="">Description</th>
+            <tr>
+              <th>Expression</th>
+              <th>Description</th>
             </tr>
           </thead>
           <tbody>
-            <tr className="">
-              <td className="">A+B</td>
-              <td className="">A OR B</td>
+            <tr>
+              <td>A+B</td>
+              <td>A OR B</td>
             </tr>
-            <tr className="">
-              <td className="">A*B</td>
-              <td className="">A AND B</td>
+            <tr>
+              <td>A*B</td>
+              <td>A AND B</td>
             </tr>
-            <tr className="">
-              <td className="">AB</td>
-              <td className="">A AND B</td>
+            <tr>
+              <td>AB</td>
+              <td>A AND B</td>
             </tr>
-            <tr className="">
-              <td className="">!A</td>
-              <td className="">NOT A</td>
+            <tr>
+              <td>!A</td>
+              <td>NOT A</td>
             </tr>
-            <tr className="">
-              <td className="">(A+B)*C</td>
-              <td className="">(A OR B) AND C</td>
+            <tr>
+              <td>(A+B)*C</td>
+              <td>(A OR B) AND C</td>
+            </tr>
+            <tr>
+              <td>(ABC)+(!BCD)</td>
+              <td>(A AND B AND C) OR ((NOT B) AND C AND D)</td>
             </tr>
           </tbody>
         </table>
