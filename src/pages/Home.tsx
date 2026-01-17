@@ -11,9 +11,7 @@ export default function Home() {
   return (
     <div className="parent-div">
       <div className='page-container'>
-        <div>
-          <ExprInput onResultChange={setResult} />
-        </div>
+        <ExprInput onResultChange={setResult} />
         {result && <div className={styles["truth-table"]}>
           <div>
             {result.type === "Invalid"
