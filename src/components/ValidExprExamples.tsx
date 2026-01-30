@@ -1,7 +1,6 @@
 export default function ValidExprExamples() {
   return (
     <div className='page-container'>
-      <h1 className='page-header'>Examples of Valid Syntax</h1>
       <div className='page-table-container'>
         <table className='page-table'>
           <thead>
@@ -29,6 +28,10 @@ export default function ValidExprExamples() {
             </tr>
             <tr>
               <td>(A+B)*C</td>
+              <td>(A OR B) AND C</td>
+            </tr>
+            <tr>
+              <td>(A+B)C</td>
               <td>(A OR B) AND C</td>
             </tr>
             <tr>
