@@ -3,30 +3,29 @@ import styles from './SyntaxRules.module.css';
 export default function SyntaxRules() {
   return (
     <div className='page-container'>
-      <h1 className='page-header'>Boolean Algebra Syntax</h1>
       <div className='page-table-container'>
         <table className='page-table'>
           <thead>
             <tr>
               <th>Order of Operations</th>
-              <th>Logical Operators</th>
               <th>Boolean Algebra Operator</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1st</td>
-              <td>NOT</td>
-              <td>!</td>
+              <td>( )</td>
             </tr>
             <tr>
               <td>2nd</td>
-              <td>AND</td>
-              <td>*</td>
+              <td>!</td>
             </tr>
             <tr>
               <td>3rd</td>
-              <td>OR</td>
+              <td>*</td>
+            </tr>
+            <tr>
+              <td>4th</td>
               <td>+</td>
             </tr>
           </tbody>
