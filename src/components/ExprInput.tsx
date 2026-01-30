@@ -2,6 +2,8 @@ import { useState } from "react"
 import { generateTruthTable } from "../utils/bc_generate_truth_table"
 import { type Result } from "../utils/bc_syntax"
 import styles from "./ExprInput.module.css"
+import HelpButton from "./HelpButton"
+import ValidExprExamples from "./ValidExprExamples"
 
 function isalpha(char: string) {
   return char.toLowerCase() !== char.toUpperCase()
@@ -34,6 +36,11 @@ type ExprInputProps = {
 
 export default function ExprInput({ onResultChange }: ExprInputProps) {
   const [input, setInput] = useState("")
+  const [showExamples, setShowExamples] = useState(false)
+
+  function toggleExamples() {
+    setShowExamples(prev => !prev)
+  }
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -42,20 +49,32 @@ export default function ExprInput({ onResultChange }: ExprInputProps) {
     onResultChange(res)
   }
 
+
+
   return (
-    <div className={styles["form-container"]} >
-      <form onSubmit={handleSubmit}>
-        <input
-          className={styles["form-input"]}
-          type="text"
-          placeholder="Enter boolean expression"
-          value={input}
-          onChange={e => setInput(e.target.value)}
-        />
-        <button type="submit" className={styles["form-button"]}>
-          Generate Truth Table
-        </button>
-      </form>
+    <div className={styles["form-container"]}>
+      <div className={styles.card}>
+        <HelpButton onClick={toggleExamples} />
+        {showExamples ? (
+          <>
+            <h1>Syntax Examples</h1>
+            <ValidExprExamples />
+          </>
+        ) : (
+          <form onSubmit={handleSubmit}>
+            <input
+              className={styles["form-input"]}
+              type="text"
+              placeholder="Enter boolean expression"
+              value={input}
+              onChange={e => setInput(e.target.value)}
+            />
+            <button type="submit" className={styles["form-button"]}>
+              Generate Truth Table
+            </button>
+          </form>
+        )}
+      </div>
     </div>
   )
 }

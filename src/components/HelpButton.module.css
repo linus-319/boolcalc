@@ -1,0 +1,17 @@
+.helpButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+
+    background: rgb(102, 179, 250);
+    border: 2px solid rgb(168, 186, 200);
+    z-index: 500;
+}

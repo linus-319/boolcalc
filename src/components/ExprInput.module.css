@@ -6,14 +6,13 @@
 }
 
 .form-container form {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(106, 123, 152);
   border-radius: 20px;
   padding: 20px;
   margin: 0 2px;
-  box-shadow: 5px 5px 10px rgb(137, 136, 136);
   max-width: 600px;
 }
 
@@ -40,8 +39,33 @@
   border-color: rgb(168, 186, 200);
 }
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: rgb(106, 123, 152);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgb(137, 136, 136);
+  max-width: 600px;
+}
+
+.card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h1 {
+  color: rgb(180, 228, 254);
+}
+
 @media (max-width: 600px) {
   .form-container form {
     max-width: 300px;
+    padding: 20px 40px;
   }
 }
