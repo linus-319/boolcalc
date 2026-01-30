@@ -68,4 +68,8 @@
     max-width: 300px;
     padding: 20px 40px;
   }
+
+  .card {
+    max-width: 300px;
+  }
 }
